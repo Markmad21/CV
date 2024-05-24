@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum Vitae</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 56px; /* Espacio para el navbar fijo */
+            scroll-behavior: smooth; /* Desplazamiento suave */
+        }
+        .profile-pic {
+            max-width: 150px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+        }
+        .section-title {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .section {
+            padding: 20px 0;
+        }
+        .sidebar {
+            position: fixed;
+            top: 70px; /* Ajusta según la altura de tu navbar */
+            left: 0;
+            padding: 20px;
+            width: 250px;
+            height: 100%;
+            background-color: #f8f9fa;
+            border-right: 1px solid #dee2e6;
+        }
+        .main-content {
+            margin-left: 270px; /* Ajusta según el ancho de tu sidebar */
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target="#navbar-cv" data-offset="70">
+
+    <!-- Navbar -->
+    <nav id="navbar-cv" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Currículum Vitae</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#perfil">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiencia">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#educacion">Educación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#idiomas">Idiomas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cursos">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#referencias">Referencias</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <img src="profile-pic.jpg" alt="Foto de Perfil" class="img-fluid profile-pic">
+        <h1>Nombre Completo</h1>
+        <p>Dirección: Calle Falsa 123, Ciudad, País</p>
+        <p>Teléfono: +123 456 7890</p>
+        <p>Correo Electrónico: ejemplo@correo.com</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/usuario">linkedin.com/in/usuario</a></p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container main-content">
+        <div class="section-title" id="perfil">
+            <h2>Perfil Profesional</h2>
+        </div>
+        <div class="section">
+            <p>Profesional en [Tu Área] con [X] años de experiencia en [Campo/Industria]. Especializado en [Especialización o Habilidades Clave]. Busco oportunidades para aplicar mis habilidades en [Área de Interés].</p>
+        </div>
+        <hr>
+
+        <!-- Experiencia Laboral -->
+        <div class="section-title" id="experiencia">
+            <h2>Experiencia Laboral</h2>
+        </div>
+        <div class="section">
+            <div class="mb-4">
+                <h3>Nombre de la Empresa</h3>
+                <p><strong>Cargo:</strong> Desarrollador de Software</p>
+                <p><strong>Fecha:</strong> Enero 2020 – Actualidad</p>
+                <ul>
+                    <li>Desarrollé y mantuve aplicaciones web utilizando React y Node.js, mejorando la eficiencia del sistema en un 30%.</li>
+                    <li>Lideré un equipo de 5 desarrolladores en proyectos de alta complejidad, cumpliendo los plazos establecidos.</li>
+                </ul>
+            </div>
+            <div class="mb-4">
+                <h3>Innovatech</h3>
+                <p><strong>Cargo:</strong> Ingeniero de Software Junior</p>
+                <p><strong>Fecha:</strong> Junio 2017 – Diciembre 2019</p>
+                <ul>
+                    <li>Participé en el desarrollo de aplicaciones móviles híbridas utilizando Ionic.</li>
+                    <li>Colaboré en la implementación de APIs RESTful, mejorando la comunicación entre sistemas.</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Educación -->
+        <div class="section-title" id="educacion">
+            <h2>Educación</h2>
+        </div>
+        <div class="section mb-4">
+            <h3>Universidad Nacional</h3>
+            <p><strong>Título:</strong> Ingeniería en Sistemas</p>
+            <p><strong>Fecha:</strong> 2013 – 2017</p>
+        </div>
+        <hr>
+
+        <!-- Habilidades -->
+        <div class="section-title" id="habilidades">
+            <h2>Habilidades</h2>
+        </div>
+        <div class="section">
+            <ul>
+                <li>JavaScript, React, Node.js</li>
+                <li>Desarrollo de APIs RESTful</li>
+                <li>Git, Scrum</li>
+            </ul>
+        </div>
+        <hr>
+
+        <!-- Idiomas -->
+        <div class="section-title" id="idiomas">
+            <h2>Idiomas</h2>
+        </div>
+        <div class="section">
+            <ul>
+                <li>Español (Nativo)</li>
+                <li>Inglés (Avanzado)</li>
+            </ul>
+        </div>
+        <hr>
+
+        <!-- Cursos y Certificaciones -->
+        <div class="section-title" id="cursos">
+            <h2>Cursos y Certificaciones</h2>
+        </div>
+        <div class="section mb-4">
+            <h3>Certificación en Desarrollo Web Full Stack</h3>
+            <p><strong>Institución:</strong> Coursera</p>
+            <p><strong>Fecha:</strong> 2020</p>
+        </div>
+        <hr>
+
+        <!-- Referencias -->
+        <div class="section-title" id="referencias">
+            <h2>Referencias</h2>
+        </div>
+        <div class="section">
+            <p>Referencias disponibles a solicitud.</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
